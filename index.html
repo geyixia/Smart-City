@@ -1,0 +1,107 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>智慧城市</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="index-wrapper">
+      <div class="header">
+        <img class="logo" src="/image/park-logo.png" alt="" />
+      </div>
+      <div class="page-container" ref="container">
+        <div class="model-container">
+          <div id="loading" class="loading">
+            <p id="processing" class="text">园区资源加载中<span id="processing-number"></span>…</p>
+            <div id="loading-bar" class="loading-bar"></div>
+          </div>
+          <div id="canvas" class="canvas"></div>
+          <div id="all-charts" class="all-charts" >
+            <div class="section-one">
+              <img class="img-header" src="/image/city-gaikuang.png" alt="" />
+              <div class="icons-container" >
+                <div class="item">
+                  <div class="icons-item building-icon">
+                    <span id="building-number" class="number">
+                      28
+                    </span>
+                  </div>
+                  <span class="title">电量峰值</span>
+                  <span class="unity">（度）</span>
+                </div>
+                <div class="item">
+                  <div class="icons-item enterprise-icon">
+                    <span id="enterprise-number" class="number">
+                      6
+                    </span>
+                  </div>
+                  <span class="title"> 实时温度</span>
+                  <span class="unity">（度）</span>
+                </div>
+                <div class="item">
+                  <div class="icons-item car-icon">
+                    <span id="car-number" class="number">
+                      1530
+                    </span>
+                  </div>
+                  <span class="title">出租车运力</span>
+                  <span class="unity">（个）</span>
+                </div>
+                <div class="item">
+                  <div class="icons-item rod-icon">
+                    <span id="rod-number" class="number">
+                      48
+                    </span>
+                  </div>
+                  <span class="title">拥堵程度</span>
+                  <span class="unity">（个）</span>
+                </div>
+              </div>
+            </div>
+            <div class="section-two">
+              <img class="img-header" src="/image/city-shouru.png" alt="" />
+              <div id="bar-chart" class="bar-chart" ></div>
+            </div>
+            <div class="section-three">
+              <img class="img-header" src="/image/city-chanye.png" alt="" />
+              <div id="pie-chart" class="pie-chart" ></div>
+            </div>
+          </div>
+
+          <div id="right-btns" class="right-btns" style="pointer-events: all;">
+            <div>
+              <img id="mode-topView" class="mode-topView" src="/image/city-niaokan.png"
+                style="pointer-events: all;" alt="">
+            </div>
+            <div>
+              <img id="mode-roaming" class="mode-roaming" src="/image/city-manyou.png"
+                style="pointer-events: all;" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="tag-1" class="building-name" style="display: none;">东方明珠</div>
+      <div id="tag-2" class="building-info" style="display: none;">
+        <div>总平米数： 2000</div>
+        <div>容纳人数： 10000</div>
+        <div>可出租位： 50</div>
+        <div>空余车位： 10</div>
+      </div>
+
+      <div id="tag-3" class="building-fire" style="display: none;">
+        <div>着火大楼： 东方明珠</div>
+        <div>着火楼层： 18层</div>
+        <div>疏散人数： 1800人</div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
